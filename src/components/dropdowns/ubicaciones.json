@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_dropdowns_ubicaciones",
+  "info": {
+    "displayName": "ubicaciones",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "ubicacion": {
+      "type": "enumeration",
+      "enum": [
+        "Trujillo",
+        "Lima"
+      ]
+    }
+  }
+}

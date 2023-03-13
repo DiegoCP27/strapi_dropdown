@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jobs",
+  "info": {
+    "singularName": "job",
+    "pluralName": "jobs",
+    "displayName": "job",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slug": {
+      "type": "uid",
+      "required": true,
+      "targetField": "empleo"
+    },
+    "empleo": {
+      "type": "string",
+      "required": true
+    },
+    "tipo_empleo": {
+      "type": "string",
+      "required": true
+    },
+    "resumen": {
+      "type": "text",
+      "required": true
+    },
+    "ubicaciones": {
+      "type": "enumeration",
+      "enum": [
+        "Trujillo",
+        "Lima"
+      ]
+    },
+    "tipo_contrato": {
+      "type": "enumeration",
+      "enum": [
+        "Prácticas",
+        "Trabajo"
+      ]
+    },
+    "contrato": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dropdowns.tipo-contrato"
+    },
+    "ubicacion": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dropdowns.ubicaciones",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_dropdowns_tipo_contratoes",
+  "info": {
+    "displayName": "tipoContrato",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "contrato": {
+      "type": "enumeration",
+      "enum": [
+        "Prácticas",
+        "Trabajo"
+      ]
+    }
+  }
+}
